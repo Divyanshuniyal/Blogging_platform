@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ea59660221.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Your Blogging Platform</title>
+
+    <style>
+      body {
+        background-color: #d3dae07c;
+      }
+      .navbar {
+        background-color: #0475df;
+      }
+      .navbar-brand {
+        color: #e90d0d;
+      }
+      .navbar-nav .nav-link {
+        color: #fafafa;
+      }
+      .jumbotron {
+        background: url(img1.jpg) no-repeat center center;
+        background-size: 1500px 500px;
+        color: #ebe7e7;
+        text-align: center;
+        text-emphasis-color: white;
+        padding: 389x129;
+        margin-bottom: 30px;
+      }
+      .jumbotron h1{
+        color: white;
+      }
+      .jumbotron h5{
+        color: white;
+      }
+      .section-heading {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+      }
+      .template-card {
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .template-card:hover {
+        transform: scale(1.05);
+      }
+      .featured-post {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+      .post-title {
+        font-size: 30px;
+        color: #007bff;
+        margin-bottom: 50px;
+        margin-top: 30px;
+      }
+      .post-description {
+        color: #555;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      .btn-primary:hover {
+        background-color: #9111f3;
+        border-color: #070809;
+      }
+      .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+      .btn-success:hover {
+        background-color: #218838;
+        border-color: #218838;
+      }
+      .btn-outline-light {
+        border-color: #fff;
+        color: #0c0808;
+      }
+      .btn-outline-light:hover {
+        background-color: #d9a5a5;
+        color: #343a40;
+      }
+      .container {
+        max-width: 960px;
+      }
+      .b-content {
+        color: black;
+      }
+      .about {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+      }
+      .about img {
+        width: 400px;
+        height: 250px;
+        border-radius: 20px;
+      }
+      .about .col-title {
+        font-size: 30px;
+      }
+      .about .col-para-1 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .about button {
+        background-color: blue;
+      }
+      .Contact {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid primary">
+        <a class="navbar-brand" href="#"
+          >EWrite <img src="blg5.png" alt="" width="75px"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marketing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Arts & hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bussiness</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get Started</a>
+            </li>
+          </ul>
+          <!-- Adding a search bar -->
+          <!-- <form class="form-inline ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron b-content">
+      <h1 class="display-4">Welcome to Your Blog</h1>
+      <h1 class="display-4">Awesome Blogging Platform</h1>
+      <h5 class="display-6">
+        Create, publish, and share your thoughts with the world!
+      </h5>
+    </div>
+
+    <div class="container">
+      <!-- Featured Post Section -->
+      <div class="featured-post">
+        <h2 class="post-title" style="text-align: center">
+          Featured Post: "Exploring the Wonders of Nature"
+        </h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="blg1.jpg" class="card-img-top" alt="Post Image" />
+              <div class="card-body">
+                <h5 class="card-title">Post Title</h5>
+                <p class="card-text">
+                  Join us on an adventurous journey as we explore the beauty of
+                  nature. From lush forests to breathtaking landscapes, this
+                  post is a visual delight for nature enthusiasts.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="blg2.jpg" class="card-img-top" alt="Post Image" />
+              <div class="card-body">
+                <h5 class="card-title">Post Title</h5>
+                <p class="card-text">
+                  Join us on an adventurous journey as we explore the beauty of
+                  nature. From lush forests to breathtaking landscapes, this
+                  post is a visual delight for nature enthusiasts.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="blg3.jpeg" class="card-img-top" alt="Post Image" />
+              <div class="card-body">
+                <h5 class="card-title">Post Title</h5>
+                <p class="card-text">
+                  Join us on an adventurous journey as we explore the beauty of
+                  nature. From lush forests to breathtaking landscapes, this
+                  post is a visual delight for nature enthusiasts.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section for Templates -->
+    <div class="container">
+      <h2 class="section-heading mb-4" style="text-align: center">
+        Blog Templates
+      </h2>
+      <div class="row">
+        <div class="col-md-4 template-card">
+          <div class="card">
+            <img
+              src="blg2.jpg"
+              class="card-img-top"
+              alt="Educational Blog Template"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Educational Blog</h5>
+              <p class="card-text">
+                A template suitable for educational content and discussions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 template-card">
+          <div class="card">
+            <img
+              src="blg3.jpeg"
+              class="card-img-top"
+              alt="Technical Blog Template"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Technical Blog</h5>
+              <p class="card-text">
+                Ideal for sharing technical insights, tutorials, and updates.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 template-card">
+          <div class="card">
+            <img
+              src="blg4.jpg"
+              class="card-img-top"
+              alt="Traveling Blog Template"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Traveling Blog</h5>
+              <p class="card-text">
+                Capture your travel experiences and adventures with this
+                template.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary">More Templates</a>
+      </div>
+    </div>
+
+    <!-- More Templates Button -->
+    <div class="container about" style="margin-top: 40px">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 col-md-12 about-txt">
+          <div class="col-title">Blogging</div>
+          <div class="col-para-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non
+            ullam quo vitae alias maxime culpa mollitia explicabo quaerat
+            tenetur?
+          </div>
+
+          <div class="col-btn">
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-12">
+          <img src="b1.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 mt-5">
+          <img src="b2.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 mt-5">
+          <div class="col-title">WordPress</div>
+          <div class="col-para-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non
+            ullam quo vitae alias maxime culpa mollitia explicabo quaerat
+            tenetur?
+          </div>
+          <div class="col-btn">
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- <div class="container">
+      <hr />
+      <div class="post">
+        <h3 class="post-title">Why a Blogging Platform?</h3>
+        <p class="post-description">
+          Blogging as we already know is the best way to connect our thoughts
+          with the mass. Whether to share your personal experiences or to
+          promote a business, content has been the key in almost all scenarios
+          online. Blogging today is more than just sharing write-ups and
+          interactive content. Blogging is completely dependent on the outreach
+          and engagement of users online. Customization of a blog is a primary
+          element prior to any writing as these enhancements help inspire users
+          to stay engaged with the blog.
+        </p>
+        <img src="b1.jpg" height="300" width="450" />
+      </div>
+      <div class="post">
+        <h3 class="post-title">WordPress</h3>
+        <p class="post-description">
+          As features are considered, WordPress can be the best platform for
+          constructing an unimaginably productive blog in minutes.
+          Personalization at its peak, WordPress has been offering its users
+          with classic tools to change themes, use custom domains, and upload
+          media objects, add-ons for social media, mobile friendly interface and
+          multi-author support.
+        </p>
+        <img src="b2.jpg" height="300" width="450" />
+      </div>
+      <div class="post">
+        <h3 class="post-title">Blogger</h3>
+        <p class="post-description">
+          The blogging platform written in Python language by Google, Blogger is
+          one of the oldest. Being a free service for users with signup process
+          through a Google account, it can be customized with some beautiful
+          themes and can be published in minutes. Enhancements of Blogger
+          include addition of location to blog posts, post time-stamping,
+          multiple national and international languages support and social media
+          integration with a commenting space for readers.
+        </p>
+      </div>
+      <div class="post">
+        <h3 class="post-title">Tumblr</h3>
+        <p class="post-description">
+          An efficient dashboard, live feed of recent posts from users,
+          re-blogging and liking posts made this micro-blogging platform a
+          frequently visited space for creative bloggers across the globe.
+          Engagement being the motive, Tumblr features integration of social
+          media profiles, scheduling of posts, adding tags to make content
+          discoverable and using custom domain for creation of a unique blog.
+        </p>
+        <img src="b3.jpg" height="300" width="450" />
+      </div>
+      <div class="post">
+        <h3 class="post-title">Medium</h3>
+        <p class="post-description">
+          One of the best interface offering for a blog is offered by Medium.
+          With artistic themes, editing and formatting rich text formats online,
+          recommendations and sharing features, all add to the effectiveness of
+          the blogging platform. The tagging system is one of the resourceful
+          features of Medium and it helps sort content according to topics which
+          make them more discoverable.
+        </p>
+      </div>
+      <div class="post">
+        <h3 class="post-title">Weebly</h3>
+        <p class="post-description">
+          A multipurpose platform like this holds a space for all requirements
+          involving blog, website or an online store. Weebly is a very simple
+          blogging platform that helps great writers to simply drag and drop its
+          customization features to build a professional blog in just minutes.
+          The themes by Weebly are very responsive and help create media
+          galleries, slideshows and is mobile optimized./p>
+        </p>
+      </div>
+
+      <div class="post">
+        <h3 class="post-title">LiveJournal</h3>
+        <p class="post-description">
+          Each user has a journal page with individual webpages for each journal
+          entry has made LiveJournal a unique blogging platform. LiveJournal has
+          helped engage journalists with comment section and a friend list that
+          showcases some of the recent blog posts from the connected users.
+          Customization can be done in many ways with graphical avatars, user
+          information and interests or communities.
+        </p>
+        <img src="b4.jpg" height="300" width="450" />
+      </div>
+    </div>
+    Contact Us and Social Links -->
+      <!-- <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading" style="text-align: center">Contact Us</h2>
+          <p style="text-align: center">
+            Reach out to us with your inquiries or feedback. We value your
+            communication.
+          </p>
+        </div> -->
+
+      <!-- Registration and Login Forms -->
+      <div
+        class="row Contact border"
+        style="
+          margin: auto;
+          margin-top: 80px;
+          background-color: white;
+          padding: 40px;
+          border-radius: 20px;
+        "
+      >
+        <div class="col-md-6">
+          <h4>Register</h4>
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Enter username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+
+        <hr />
+
+        <!-- Login Form -->
+        <div class="col-md-6">
+          <h4>Login</h4>
+          <form>
+            <div class="form-group">
+              <label for="loginUsername">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="loginUsername"
+                placeholder="Enter username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                placeholder="Enter password"
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              hendrerit justo eget odio ultricies euismod.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <div class="list-unstyled" style="text-transform: lowercase">
+              <li><i class="fab fa-instagram mr-2"></i>Instagram</li>
+              <li><i class="fa-brands fa-facebook mr-2"></i> Facebook</li>
+              <li><i class="fa-brands fa-linkedin mr-2"></i>Linkedin</li>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>Sitapur,Uttar Pradesh</p>
+            <p>Email: divyansh123@gmail.com</p>
+            <p>Phone:+91 999999999</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="container-fluid text-center mt-3 border-top">
+        <p class="mt-3">&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
